@@ -5,8 +5,9 @@ import pilacola.PilaLista;
 
 public class Main {
 	public static void main(String[] args) {
-	
-		pruebaCola();
+		
+		
+		pruebaPila();
 	}
 	
 	
@@ -22,6 +23,8 @@ public class Main {
 				pila.mostrar();
 				System.out.println("Pop" + pila.pop());
 				System.out.println("Pop" + pila.pop());
+				pila.mostrar();
+				System.out.println("Peek" +pila.peek());
 				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
