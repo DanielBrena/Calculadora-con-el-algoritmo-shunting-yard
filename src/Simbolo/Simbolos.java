@@ -28,6 +28,10 @@ public class Simbolos {
 	}
 	
 	public static boolean isOperando(String simbolo){
+		return !(contains(simbolos, new Simbolo(simbolo)));
+	}
+	
+	public static boolean isOperador(String simbolo){
 		return (contains(simbolos, new Simbolo(simbolo)));
 	}
 	

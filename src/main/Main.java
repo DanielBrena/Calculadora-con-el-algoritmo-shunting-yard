@@ -1,13 +1,14 @@
 package main;
 
+import notacion.Notacion;
 import pilacola.ColaLista;
 import pilacola.PilaLista;
 
 public class Main {
 	public static void main(String[] args) {
 		
-		
-		pruebaPila();
+		pruebaConvertirPostfija();
+		//pruebaPila();
 	}
 	
 	
@@ -53,5 +54,18 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public static void pruebaConvertirPostfija(){
+		
+		
+		
+			Notacion notacion = new Notacion();
+			try {
+				System.out.println(notacion.convertirPostfija("2+5*6"));
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
 }

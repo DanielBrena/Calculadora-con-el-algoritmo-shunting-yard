@@ -1,7 +1,7 @@
 package pilacola;
 
+import nodos.Nodo;
 import excepcion.ListaException;
-
 import listasLigadas.Lista;
 public class ColaLista<T> {
 	
@@ -37,4 +37,14 @@ public class ColaLista<T> {
 		return this.lista.getP() == null;
 	}
 	
+	public String toString(){
+		String resultado = "";
+		
+		Nodo<T> aux = lista.invierteLista(lista).getP();
+		while(aux != null){
+			resultado = resultado + aux.getValor().toString();
+			aux = aux.getLiga();
+		}
+		return resultado;
+	}
 }
